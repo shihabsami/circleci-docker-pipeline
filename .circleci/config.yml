@@ -15,6 +15,7 @@ jobs:
       - run:
           name: Push Docker image to Dockerhub
           command: |
+            echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
             docker push shihabsami/sept-take-home-assignment-2:latest
 
 workflows:
