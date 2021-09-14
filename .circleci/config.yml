@@ -11,11 +11,11 @@ jobs:
       - run:
           name: Build Docker image
           command: |
-          docker build -t shihabsami/sept-take-home-assignment-2:latest .
+            docker build -t shihabsami/sept-take-home-assignment-2:latest .
       - run:
           name: Push Docker image to Dockerhub
           command: |
-          docker push shihabsami/sept-take-home-assignment-2:latest
+            docker push shihabsami/sept-take-home-assignment-2:latest
 
 workflows:
   build:
